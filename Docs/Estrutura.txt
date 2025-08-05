@@ -1,0 +1,32 @@
+﻿Solução: Cad_Simples_Restfull
+├── ApiUsuarios/                     <- Web API .NET 6 (Back-end)
+│    ├── Controllers/                  <- Controllers REST (UsuariosController.cs)
+│    ├── Data/                         <- DbContext e Configurações do EF Core
+│    ├── Models/                       <- Models/Entities (Usuario.cs)
+│    ├── Migrations/                   <- Migrations do Entity Framework
+│    ├── Properties/
+│    │    └── launchSettings.json
+│    ├── appsettings.json              <- Conexão com SQL Server e configs da API
+│    └── Program.cs                    <- Inicialização da API e Swagger
+│
+├── WinFormsUsuarios/                 <- Aplicação WinForms (Front-end MVC)
+│    ├── Controllers/                  <- Controllers de comunicação com a API
+│    ├── Models/                       <- Models para consumo da API
+│    ├── Views/                        <- Telas (FormLogin, FormUsuarios, Modal)
+│    ├── Properties/
+│    └── Program.cs                    <- Inicialização da aplicação WinForms
+│
+├── Connected Services/               <- Serviços conectados (opcional)
+│    └── Banco de dados do SQL Server  <- Só se gerar EDMX ou scaffolding
+│
+├── Docs/                             <- Documentação, estrutura em txt
+│    ├── Estrutura.txt                 <- Toda estrutura em txt
+│    └── README.md                     <- Passo a passo de instalação
+│
+├── Sql/                             <- Documentação, scripts SQL, diagramas
+│    └── Procedures.sql               <- Script com todas as SPs
+├── .github/
+│   └── workflows/
+│       └── ci-cd.yml
+│
+└── Cad_Simples_Restfull.sln         <- Arquivo da solução principal
