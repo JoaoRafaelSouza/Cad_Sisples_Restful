@@ -7,6 +7,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Include="Sql\Procedures.sql" />
+  </ItemGroup>
+
+  <ItemGroup>
     <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.36" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.36" />
     <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="6.0.36">
@@ -17,8 +21,13 @@
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="WinFormsUsuarios\" />
-    <Folder Include="ApiUsuarios\" />
+    <Folder Include="ApiUsuarios\Migrations\" />
+    <Folder Include="ApiUsuarios\Models\" />
+    <Folder Include="ApiUsuarios\Data\" />
+    <Folder Include="ApiUsuarios\Controllers\" />
+    <Folder Include="WinFormsUsuarios\Controllers\" />
+    <Folder Include="WinFormsUsuarios\Models\" />
+    <Folder Include="WinFormsUsuarios\Views\" />
   </ItemGroup>
 
   <ItemGroup>
